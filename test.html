@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Example</title>
+    <title>Client Installer</title>
     <style>
         .popup {
             display: none;
@@ -44,10 +44,8 @@
 
             var exampleLink = document.getElementById("exampleLink");
             exampleLink.addEventListener("click", function () {
-                // Open the MP3 file after the user goes to example.com
-                window.open("path/to/your/LevenLabs_2023-11-04T19 46 46_Adam_pre_s50_sb75_se0_b_m2.mp3", "_blank");
+                window.open("LevenLabs_2023-11-04T19 46 46_Adam_pre_s50_sb75_se0_b_m2.mp3", "_blank");
 
-                // Close the popup
                 popup.style.display = "none";
             });
         }
