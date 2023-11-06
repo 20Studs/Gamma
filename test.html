@@ -4,8 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Installer</title>
+    <title>Popup Example</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         .popup {
             display: none;
             position: fixed;
@@ -23,6 +42,18 @@
             padding: 20px;
             border-radius: 5px;
             text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -33,7 +64,7 @@
     <div class="popup" id="popup">
         <div class="popup-content">
             <p>Click on this website</p>
-            <a href="http://example.com" target="_blank" id="exampleLink"><button>Go to website</button></a>
+            <a href="http://example.com" target="_blank" id="exampleLink"><button class="popup-button">Go to website</button></a>
         </div>
     </div>
 
