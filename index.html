@@ -12,32 +12,48 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f2f2f2;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image URL */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
         }
 
-        .button-container {
+        .container {
             text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .download-button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #888888;
+            padding: 15px 30px;
+            background-color: #3498db;
             color: #ffffff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
         }
 
         .download-button:hover {
-            background-color: #555555;
+            background-color: #2980b9;
         }
     </style>
 </head>
 
 <body>
-    <h2> Gamma Client I V: 1.0</h2>
-    <div class="button-container">
-        <a href="https://github.com/jbfodevstyle/Gamma/raw/main/Player.exe" class="download-button">Download</a>
+    <div class="container">
+        <h2>Gamma Client V: 1.0</h2>
+        <div class="button-container">
+            <a href="https://github.com/jbfodevstyle/Gamma/raw/main/Player.exe" class="download-button">Download</a>
+        </div>
     </div>
 </body>
 
